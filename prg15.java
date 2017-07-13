@@ -1,4 +1,4 @@
-class Calc //varargs
+class Calc //var-args
 {
 	int add(int... j){
 	int sum=0;	
