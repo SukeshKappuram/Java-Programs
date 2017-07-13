@@ -1,0 +1,73 @@
+Sample Java Code:
+
+public class FirstJavaProgram {
+  public static void main(String[] args){
+    System.out.println("This is my first program in java");
+  }//End of main
+}//End of FirstJavaProgram Class
+Output: This is my first program in java
+
+In the above program the class FirstJavaProgram has public access and hence declared public.
+‘class’ is the keyword used to create a class.
+For running stand-alone programs ‘main’ method is needed which has a signature similar to the one defined in the above program.
+‘Main’ method takes an array of strings as an argument. The name of the array can be anything.
+To display the output, pass the string as an argument to the method System.out.println.
+Steps for compilation and Execution
+
+Step1: Save the source file as WelcomeApp.java.
+Step2: Open command prompt and navigate to the directory where you have stored the file.
+Step 3: To compile, type javac FirstJavaProgram.java and press Enter.
+Step 4: On successful compilation, you will see the command prompt and FirstJavaProgram.class file in the same folder where WelcomeApp.java is stored. This is the byte code of the program.
+Step 5: To execute, type java FirstJavaProgram. Do not type the extension while executing.
+Step 6: See the output “This is my first program in java” displayed on the console.
+
+Common programming Errors in Java
+
+The following are the general programming errors and the solution for them while running on windows machine.
+
+1) ‘javac’ is not recognized as an internal or external command, operable program or batch file – This means that the operating system cannot find the compiler – javac.  In order to resolve this the PATH variable has to be set.
+2) Exception in thread “main”java.lang.NoClassDefFoundError: FirstJavaProgram –  This error means that java cannot find your compiled byte code, WelcomeApp.class. If the class file is present in directory other than the directory where java file is stored, then the CLASSPATH must be set pointing to the directory that contains compiled class files.
+======================================================================
+
+If you are a beginner and feel hard to understand the below example then just skip it and try to understand it once you finished reading all of my linked tutorials. After reading all tutorials it would be easy for you to learn things much faster.
+
+package FirstCode
+import java.lang.*;
+class WelcomeMessage
+{
+  printMessage()
+  {
+      System.out.println("Hello World");
+  }
+}
+class Myclass
+{
+   public static void main(String  []args)
+   {
+      WelcomeMessage obj=new  WelcomeMessage ();
+      obj.printMessage();
+   }
+}
+Output: Hello World
+
+Interpreting the code
+
+a) Line 1. The package FirstCode creates a folder to store the class files generated after compilation
+b) Line2. It imports the class library java.lang and its subsequent classes
+c) Line 3. Initiates a class with the name WelcomeMessage
+d) Line 5. Declares a method with name printMessage
+e) Line 7. Defines the actual working code of the method
+f) Line 10. Initiates the class having the main method; it should bear the name of the file : Myclass.java
+g) Line 12. Declares the main method
+h) Line 14. Initiates the creation of the object
+i) Line 15. Calls the method printMessage () with the help of the object
+j) The above code is saved and compiled to run on JVM
+
+The programming structure
+
+1) The programming pattern is divided into classes which has meth0d definitions
+2) This assists in distributing the code into smaller units
+3) The libraries can be used over and over again
+4) These codes generated here can be called in another program if required
+5) The memory allocation is done only after the execution of the new keyword
+6) It gets easier to collect memory that does not has any future use
